@@ -12,9 +12,9 @@ const baseConf = (_path) => {
         index: ['babel-polyfill', './src/index/index.js'],
         lesson_5: ['./src/lesson_5/lesson_5.js'],
         lesson_6: ['./src/lesson_6/lesson_6.js'],
-        homework_6: ['./src/homework_6/homework_6.js'],
-        home_6: ['./src/home_6/home_6.js'],
-        home_6_1: ['./src/home_6_1/home_6_1.js']
+        lesson_6_hw: ['./src/lesson_6_hw/lesson_6_hw.js'],
+        home_6_1: ['./src/home_6_1/home_6_1.js'],
+        lesson_8: ['./src/lesson_8/lesson_8.js']
 
     };
 
