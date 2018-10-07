@@ -1,0 +1,1 @@
+import './pract_w_5.scss';
