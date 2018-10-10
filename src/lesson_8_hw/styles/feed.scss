@@ -18,6 +18,15 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .content {
+    position: static;
+    top: initial;
+    left: initial;
+    transform: translate(0, 0);
+  }
+}
+
 .item {
   height: 150px;
   padding: 0.5rem;
