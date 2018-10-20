@@ -60,127 +60,78 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 348);
+/******/ 	return __webpack_require__(__webpack_require__.s = 354);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 348:
+/***/ 354:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(349);
+module.exports = __webpack_require__(355);
 
 
 /***/ }),
 
-/***/ 349:
+/***/ 355:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(350);
+var _lighter = __webpack_require__(356);
 
-var logInForm = document.querySelector('#submitForm');
-var commentElement = document.querySelector('.comment');
+__webpack_require__(357);
 
-function login(e) {
-  e.preventDefault();
-  var nameElement = document.querySelector('#name');
-  var txtElement = document.querySelector('#txt');
-  if (nameElement.value && txtElement.value) {
-    commentElement.innerHTML = nameElement.value + txtElement.value;
-  } else {
-    nameElement.style.borderColor = "red";
-    txtElement.style.borderColor = "red";
-  };
-  document.querySelector('#submitForm').reset();
-}
+var itemLightHtmlElements = document.querySelectorAll('.bulb-lighter');
 
-logInForm.onsubmit = login;
+for (var i = 0; i < itemLightHtmlElements.length; i++) {
+  (0, _lighter.lampWidget)(itemLightHtmlElements[i]);
+};
 
-/*alert('Я - JAvaScript');
+var accordion = document.querySelector('#accordion');
+accordion.addEventListener('click', toggleAccordion);
+var accordionHeaders = accordion.querySelectorAll('.item__header');
 
-var name = "Василь";
-var  admin = name;
-alert(admin);
-
-var admin, name;
-name = "Василь";
-admin = name;
-alert(admin);
-
-
-var myPlanet, name;
-myPlanet = "Земля";
-name = "Пертя";*/
-
-/*var userName = prompt('Ваше імя?', 100);
-
-//alert('Вам' + userName + 'лет');*/
-
-/*var name = prompt ('How official name JS ?');
-
-if (name === 'ECMAScript') {
-  alert('Good answer!');
-} else {
-   alert('You mast find answer!');
-}*/
-
-/*var value = prompt('Write point...');
-
-if (value > 0) {
-  alert(1);
-} else if (value < 0) {
-  alert(-1);
-} else {
-  alert(0);
-}*/
-
-/*var userName = prompt('How are you?');
-
-if (userName == 'Admin'){
-  var pass = prompt('Password?');
-  if (pass == 'Black star'){
-    alert('Welcome')
-  } else if (pass === null) {
-    alert('escape');
-  }else {
-    alert('Password?');
+function toggleAccordion(e) {
+  var itemHeader = e.target.closest('.item__header');
+  if (itemHeader) {
+    itemHeader.parentNode.classList.toggle('item--open');
+    toggleOtherItems(itemHeader);
   }
-  }else if (userName == null) {
-    alert('Enter escape');
-  } else {
-    alert('I dont remember you');
-  }*/
-
-/*var userName = prompt('Input mane');
-  if (userName == 'admin') {
-  var pass = prompt('input password!');
-  if (pass == "star"){
-    alert('Welcome!');
-  } else if (pass === null){
-    alert('incorect password');
-  }else {
-    alert('escape');
-  }
-}else if(userName == null){
-  alert('i dont remembet you');
-} else {
-  alert('enter escape');
-}*/
-
-var age = prompt('how old are you?');
-
-if (!(age >= 14 && age <= 90)) {
-  alert('ok');
-} else {
-  alert('dont');
+}function toggleOtherItems(accordionHeader) {
+  Array.from(accordionHeaders).forEach(function (header) {
+    if (header != accordionHeader) {
+      header.parentNode.classList.remove('item--open');
+    }
+  });
 }
 
 /***/ }),
 
-/***/ 350:
+/***/ 356:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.lampWidget = lampWidget;
+function lampWidget(element) {
+
+  var initBtn = element.querySelector('.bulb-lighter__btn');
+  var itemLight = element.querySelector('.bulb-lighter__item');
+
+  initBtn.addEventListener("click", function () {
+    itemLight.classList.toggle('active');
+  });
+};
+
+/***/ }),
+
+/***/ 357:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
