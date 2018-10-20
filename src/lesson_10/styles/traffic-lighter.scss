@@ -1,0 +1,27 @@
+
+.bulb-lighter {
+  display: block;
+  width: 100px;
+  border: 1px solid rgb(39, 39, 39);
+  border-radius: 4px;
+  margin: 0 auto;
+  text-align:center;
+  &__item {
+    height: 40px;
+    width: 40px;
+    margin: 10px auto;
+    border-radius: 50%;
+    background-color: rgb(124, 124, 124);
+    outline: none;
+    transition: all 0.5s;
+    }
+    &__btn {
+      display: block;
+      padding: 10px;
+      margin: 10px auto;
+      text-align: center;
+  }
+  .active {
+    background-color: yellow;
+  }
+}
