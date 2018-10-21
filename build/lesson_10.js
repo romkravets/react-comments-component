@@ -60,127 +60,74 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 348);
+/******/ 	return __webpack_require__(__webpack_require__.s = 351);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 348:
+/***/ 351:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(349);
+module.exports = __webpack_require__(352);
 
 
 /***/ }),
 
-/***/ 349:
+/***/ 352:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(350);
+__webpack_require__(353);
 
-var logInForm = document.querySelector('#submitForm');
-var commentElement = document.querySelector('.comment');
+function lampWidget(element) {
 
-function login(e) {
-  e.preventDefault();
-  var nameElement = document.querySelector('#name');
-  var txtElement = document.querySelector('#txt');
-  if (nameElement.value && txtElement.value) {
-    commentElement.innerHTML = nameElement.value + txtElement.value;
-  } else {
-    nameElement.style.borderColor = "red";
-    txtElement.style.borderColor = "red";
-  };
-  document.querySelector('#submitForm').reset();
+  var initBtn = element.querySelector('.bulb-lighter__btn');
+  var itemLight = element.querySelector('.bulb-lighter__item');
+
+  initBtn.addEventListener("click", function () {
+    itemLight.classList.toggle('active');
+  });
 }
 
-logInForm.onsubmit = login;
+var itemLightHtmlElements = document.querySelectorAll('.bulb-lighter');
 
-/*alert('Я - JAvaScript');
-
-var name = "Василь";
-var  admin = name;
-alert(admin);
-
-var admin, name;
-name = "Василь";
-admin = name;
-alert(admin);
-
-
-var myPlanet, name;
-myPlanet = "Земля";
-name = "Пертя";*/
-
-/*var userName = prompt('Ваше імя?', 100);
-
-//alert('Вам' + userName + 'лет');*/
-
-/*var name = prompt ('How official name JS ?');
-
-if (name === 'ECMAScript') {
-  alert('Good answer!');
-} else {
-   alert('You mast find answer!');
-}*/
-
-/*var value = prompt('Write point...');
-
-if (value > 0) {
-  alert(1);
-} else if (value < 0) {
-  alert(-1);
-} else {
-  alert(0);
-}*/
-
-/*var userName = prompt('How are you?');
-
-if (userName == 'Admin'){
-  var pass = prompt('Password?');
-  if (pass == 'Black star'){
-    alert('Welcome')
-  } else if (pass === null) {
-    alert('escape');
-  }else {
-    alert('Password?');
-  }
-  }else if (userName == null) {
-    alert('Enter escape');
-  } else {
-    alert('I dont remember you');
-  }*/
-
-/*var userName = prompt('Input mane');
-  if (userName == 'admin') {
-  var pass = prompt('input password!');
-  if (pass == "star"){
-    alert('Welcome!');
-  } else if (pass === null){
-    alert('incorect password');
-  }else {
-    alert('escape');
-  }
-}else if(userName == null){
-  alert('i dont remembet you');
-} else {
-  alert('enter escape');
-}*/
-
-var age = prompt('how old are you?');
-
-if (!(age >= 14 && age <= 90)) {
-  alert('ok');
-} else {
-  alert('dont');
+for (var i = 0; i < itemLightHtmlElements.length; i++) {
+  lampWidget(itemLightHtmlElements[i]);
 }
+
+/*const panelItem = document.querySelectorAll('.accordion__panel-title');
+const active = document.getElementsByClassName('accordion__panel-active');
+console.log(panelItem);
+console.log(active);
+
+Array.from(panelItem).forEach(function(item, i, panelItem) {
+item.addEventListener('click', function(e) {
+  if (active.length > 0 && active[0] !== this) // если есть активный элемент, и это не тот по которому кликнули
+    active[0].classList.remove('accordion__panel-active'); // убрать класс panel-active
+
+  // изменить состояние класса panel-active на текущем элементе: добавить если не было, убрать если было.
+  this.classList.toggle('accordion__panel-active');
+});
+});*/
+
+var panelItem = document.querySelectorAll('.panel-title'),
+    active = document.getElementsByClassName('panel-active');
+
+Array.from(panelItem).forEach(function (item, i, panelItem) {
+  item.addEventListener('click', function (e) {
+    if (active.length > 0 && active[0] !== this) // если есть активный элемент, и это не тот по которому кликнули
+      active[0].classList.remove('panel-active'); // убрать класс panel-active
+
+    // изменить состояние класса panel-active на текущем элементе: добавить если не было, убрать если было.
+    this.classList.toggle('panel-active');
+  });
+});
 
 /***/ }),
 
-/***/ 350:
+/***/ 353:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

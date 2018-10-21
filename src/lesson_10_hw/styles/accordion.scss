@@ -1,12 +1,12 @@
-$bg-colour: #dadada;
+$bg-colour: rgb(218, 218, 218);
 $a-size: 1em;
 $p-size: 1em;
 $padding: 1em;
-$text-colour-light: #fefefe;
-$text-colour-dark: #444;
-$header-background: #7e57c2;
-$header-background-dark: #673ab7;
-$content-background: #fdfdfd;
+$text-colour-light: rgb(254, 254, 254);
+$text-colour-dark: rgb(68, 68, 68);
+$header-background: rgb(125, 86, 194);
+$header-background-dark: rgb(103, 58, 183);
+$content-background: rgb(253, 253, 253);
 
 .accordion {
   font-family: Arial, Helvetica, sans-serif;
@@ -30,9 +30,8 @@ $content-background: #fdfdfd;
   }
 }
 
-
 .item__header {
-  background-image: linear-gradient(96deg, #010289 2%, #1d30d5);
+  background-image: linear-gradient(96deg, rgb(1, 2, 137) 2%, #1d30d5);
   padding: 1em 2em 1em 2em;
   width: 100%;
   text-align: left;

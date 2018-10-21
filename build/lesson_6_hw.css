@@ -10899,6 +10899,11 @@ a {
       width: 37px;
       height: 37px; }
 
+.fas {
+  font-weight: 600;
+  font-size: 1rem;
+  padding-left: 0.4rem; }
+
 .block {
   min-height: 400px;
   background-color: #fafafa;
@@ -10916,9 +10921,9 @@ a {
     background-repeat: no-repeat;
     background-image: url(./assets/images/give_back_large_2x.jpg); }
   .block_macbook-pro {
-    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
     background-image: url(./assets/images/macbook_pro_performance_large_2x.jpg); }
   .block__description {
     position: absolute;
@@ -10949,6 +10954,10 @@ a {
     font-size: 1.5rem;
     padding-top: 0.5rem;
     white-space: nowrap; }
+    @media (max-width: 979.9px) {
+      .description__content {
+        font-size: 1.4rem;
+        font-weight: 400; } }
   .description__links {
     display: -ms-flexbox;
     display: flex;
@@ -10962,6 +10971,8 @@ a {
     margin: 0.8rem; }
     .description__link_white {
       color: white; }
+  .description__link:hover {
+    color: #66bbff; }
   .description_large > * {
     margin-top: 1.5rem; }
     .description_large > *:first-child {
@@ -10978,27 +10989,33 @@ a {
   position: relative; }
   .section_watch_white {
     background: #fafafa; }
-  .section_watch__image_watch {
-    left: 50%;
-    width: 50%;
-    width: 340px;
-    height: 580px;
-    margin-left: 0;
-    position: absolute;
-    background-size: 340px 624px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-image: url(./assets/images/apple_watch_series_4_large.jpg); }
-    @media (max-width: 979.9px) {
-      .section_watch__image_watch {
-        top: 20%;
-        left: 15%;
-        width: 70%;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-image: url(./assets/images/apple_watch_series_4_small_2x.jpg); } }
+  .section_watch__image {
+    display: -ms-flexbox;
+    display: flex; }
+    .section_watch__image_watch {
+      left: 50%;
+      width: 50%;
+      width: 340px;
+      height: 580px;
+      margin-left: 0;
+      position: absolute;
+      background-size: 340px 624px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-image: url(./assets/images/apple_watch_series_4_large.jpg); }
+      @media (max-width: 979.9px) {
+        .section_watch__image_watch {
+          top: 20%;
+          left: 25%;
+          width: 50%;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-image: url(./assets/images/apple_watch_series_4_small_2x.jpg); } }
+
+.description__link_white:hover {
+  color: white; }
 
 .footer {
   color: #555555;
@@ -11012,11 +11029,16 @@ a {
       justify-content: center;
   -ms-flex-align: stretch;
       align-items: stretch;
-  padding: 0 1rem; }
+  padding: 0 1rem;
+  text-align: left; }
   .footer__notes {
     padding: 1rem;
-    line-height: 2rem;
+    line-height: 1.5rem;
     font-weight: 400; }
+    @media (max-width: 979.9px) {
+      .footer__notes {
+        font-size: 0.6rem;
+        line-height: 1rem; } }
   .footer__title {
     font-size: 1rem;
     line-height: 1.36364;
@@ -11034,6 +11056,17 @@ a {
         flex-direction: row;
     -ms-flex-pack: justify;
         justify-content: space-between; }
+    @media (max-width: 979.9px) {
+      .footer__wrapper {
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+  @media (max-width: 979.9px) {
+    .footer__info-columns {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      text-align: center; } }
   .footer__wrapper_bottom {
     display: -ms-flexbox;
     display: flex;
@@ -11042,6 +11075,11 @@ a {
     -ms-flex-pack: justify;
         justify-content: space-between;
     padding-bottom: 2rem; }
+    @media (max-width: 979.9px) {
+      .footer__wrapper_bottom {
+        -ms-flex-direction: column;
+            flex-direction: column;
+        text-align: center; } }
   .footer__link-item_legal {
     margin-left: 10px;
     margin-bottom: 10px;
@@ -11053,6 +11091,12 @@ a {
     margin: 0 auto;
     display: -ms-flexbox;
     display: flex; }
+    @media (max-width: 979.9px) {
+      .footer__legal-links {
+        -ms-flex-direction: row;
+            flex-direction: row;
+        -ms-flex-pack: center;
+            justify-content: center; } }
   .footer__link_legal {
     color: #555555; }
   .footer__link_legal:hover {
@@ -11061,6 +11105,9 @@ a {
     display: inline;
     width: 1.4rem;
     height: 1.4rem; }
+  @media (max-width: 979.9px) {
+    .footer__shop {
+      text-align: center; } }
 
 .footer__link-item_legal:nth-last-child(1) {
   border-right: none; }

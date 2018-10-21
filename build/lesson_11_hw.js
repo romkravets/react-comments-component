@@ -60,127 +60,52 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 348);
+/******/ 	return __webpack_require__(__webpack_require__.s = 364);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 348:
+/***/ 364:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(349);
+module.exports = __webpack_require__(365);
 
 
 /***/ }),
 
-/***/ 349:
+/***/ 365:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(350);
+__webpack_require__(366);
 
-var logInForm = document.querySelector('#submitForm');
-var commentElement = document.querySelector('.comment');
+window.onload = function () {
+    var links = document.querySelectorAll('.tab-menu__link');
+    var content = document.querySelectorAll('.tab-menu__item');
 
-function login(e) {
-  e.preventDefault();
-  var nameElement = document.querySelector('#name');
-  var txtElement = document.querySelector('#txt');
-  if (nameElement.value && txtElement.value) {
-    commentElement.innerHTML = nameElement.value + txtElement.value;
-  } else {
-    nameElement.style.borderColor = "red";
-    txtElement.style.borderColor = "red";
-  };
-  document.querySelector('#submitForm').reset();
-}
-
-logInForm.onsubmit = login;
-
-/*alert('Я - JAvaScript');
-
-var name = "Василь";
-var  admin = name;
-alert(admin);
-
-var admin, name;
-name = "Василь";
-admin = name;
-alert(admin);
-
-
-var myPlanet, name;
-myPlanet = "Земля";
-name = "Пертя";*/
-
-/*var userName = prompt('Ваше імя?', 100);
-
-//alert('Вам' + userName + 'лет');*/
-
-/*var name = prompt ('How official name JS ?');
-
-if (name === 'ECMAScript') {
-  alert('Good answer!');
-} else {
-   alert('You mast find answer!');
-}*/
-
-/*var value = prompt('Write point...');
-
-if (value > 0) {
-  alert(1);
-} else if (value < 0) {
-  alert(-1);
-} else {
-  alert(0);
-}*/
-
-/*var userName = prompt('How are you?');
-
-if (userName == 'Admin'){
-  var pass = prompt('Password?');
-  if (pass == 'Black star'){
-    alert('Welcome')
-  } else if (pass === null) {
-    alert('escape');
-  }else {
-    alert('Password?');
-  }
-  }else if (userName == null) {
-    alert('Enter escape');
-  } else {
-    alert('I dont remember you');
-  }*/
-
-/*var userName = prompt('Input mane');
-  if (userName == 'admin') {
-  var pass = prompt('input password!');
-  if (pass == "star"){
-    alert('Welcome!');
-  } else if (pass === null){
-    alert('incorect password');
-  }else {
-    alert('escape');
-  }
-}else if(userName == null){
-  alert('i dont remembet you');
-} else {
-  alert('enter escape');
-}*/
-
-var age = prompt('how old are you?');
-
-if (!(age >= 14 && age <= 90)) {
-  alert('ok');
-} else {
-  alert('dont');
-}
+    for (var i = 0; i < links.length; i++) {
+        (function (i) {
+            var link = links[i];
+            link.onclick = function () {
+                for (var j = 0; j < content.length; j++) {
+                    var shown = window.getComputedStyle(content[j]).display;
+                    if (shown == "block") {
+                        content[j].style.display = "none";
+                        links[j].classList.remove('tab-menu__link_active');
+                    }
+                }
+                content[i].style.display = "block";
+                links[i].classList.add('tab-menu__link_active');
+            };
+        })(i);
+    }
+};
 
 /***/ }),
 
-/***/ 350:
+/***/ 366:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
