@@ -60,50 +60,52 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 358);
+/******/ 	return __webpack_require__(__webpack_require__.s = 364);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 358:
+/***/ 364:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(359);
+module.exports = __webpack_require__(365);
 
 
 /***/ }),
 
-/***/ 359:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _dropDown = __webpack_require__(360);
-
-__webpack_require__(361);
-
-(0, _dropDown.dropDown)();
-
-/***/ }),
-
-/***/ 360:
+/***/ 365:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.dropDown = dropDown;
-function dropDown() {
-    console.log("egegerger");
-}
+__webpack_require__(366);
+
+window.onload = function () {
+    var links = document.querySelectorAll('.tab-menu__link');
+    var content = document.querySelectorAll('.tab-menu__item');
+
+    for (var i = 0; i < links.length; i++) {
+        (function (i) {
+            var link = links[i];
+            link.onclick = function () {
+                for (var j = 0; j < content.length; j++) {
+                    var shown = window.getComputedStyle(content[j]).display;
+                    if (shown == "block") {
+                        content[j].style.display = "none";
+                        links[j].classList.remove('tab-menu__link_active');
+                    }
+                }
+                content[i].style.display = "block";
+                links[i].classList.add('tab-menu__link_active');
+            };
+        })(i);
+    }
+};
 
 /***/ }),
 
-/***/ 361:
+/***/ 366:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

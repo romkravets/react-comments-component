@@ -20,7 +20,7 @@ p, figure {
 
 ul {
   list-style: none;
-  padding: 0;
+  padding-left: 0;
   margin: 0; }
 
 h2 {
@@ -100,9 +100,9 @@ a {
   font-weight: 400;
   display: none;
   height: auto;
-  border: 1px solid #444;
+  border: 1px solid #444444;
   background: #fdfdfd;
-  color: #444;
+  color: #444444;
   transition: all 0.5s; }
 
 .item--open .item__content {
