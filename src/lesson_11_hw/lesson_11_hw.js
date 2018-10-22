@@ -7,17 +7,17 @@ window.onload = function() {
   for (let i = 0; i < links.length; i++) {
       (function(i){
           let link = links[i];
-          link.onclick = function() {
-              for (let j = 0; j < content.length ; j++) {
-                  let shown = window.getComputedStyle(content[j]).display;
-                  if (shown == "block") {
-                      content[j].style.display = "none";
-                      links[j].classList.remove('tab-menu__link_active');
-                  }
-              }
-              content[i].style.display = "block";
-              links[i].classList.add('tab-menu__link_active');
-          }
+          link.addEventListener ('click', function() {
+            for (let j = 0; j < content.length ; j++) {
+                let shown = window.getComputedStyle(content[j]).display;
+                if (shown == "block") {
+                    content[j].style.display = "none";
+                    links[j].classList.remove('tab-menu__link_active');
+                }
+            }
+            content[i].style.display = "block";
+            links[i].classList.add('tab-menu__link_active');
+        })
       })(i);
   }
 }

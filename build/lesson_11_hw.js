@@ -88,7 +88,7 @@ window.onload = function () {
     for (var i = 0; i < links.length; i++) {
         (function (i) {
             var link = links[i];
-            link.onclick = function () {
+            link.addEventListener('click', function () {
                 for (var j = 0; j < content.length; j++) {
                     var shown = window.getComputedStyle(content[j]).display;
                     if (shown == "block") {
@@ -98,7 +98,7 @@ window.onload = function () {
                 }
                 content[i].style.display = "block";
                 links[i].classList.add('tab-menu__link_active');
-            };
+            });
         })(i);
     }
 };
