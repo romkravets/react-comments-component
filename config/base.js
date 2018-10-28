@@ -20,7 +20,9 @@ const baseConf = (_path) => {
         lesson_10: ['./src/lesson_10/lesson_10.js'],
         lesson_10_hw: ['./src/lesson_10_hw/lesson_10_hw.js'],
         lesson_11_p_w: ['./src/lesson_11_p_w/lesson_11_p_w.js'],
-        lesson_11_hw: ['./src/lesson_11_hw/lesson_11_hw.js']
+        lesson_11_hw: ['./src/lesson_11_hw/lesson_11_hw.js'],
+        lesson_13_hw: ['./src/lesson_13_hw/lesson_13_hw.js'],
+        lesson_13: ['./src/lesson_13/lesson_13.js']
 
     };
 
