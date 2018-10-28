@@ -60,28 +60,28 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 354);
+/******/ 	return __webpack_require__(__webpack_require__.s = 355);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 354:
+/***/ 355:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(355);
+module.exports = __webpack_require__(356);
 
 
 /***/ }),
 
-/***/ 355:
+/***/ 356:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _lighter = __webpack_require__(356);
+var _lighter = __webpack_require__(357);
 
-__webpack_require__(357);
+__webpack_require__(358);
 
 var itemLightHtmlElements = document.querySelectorAll('.bulb-lighter');
 
@@ -109,7 +109,7 @@ function toggleAccordion(e) {
 
 /***/ }),
 
-/***/ 356:
+/***/ 357:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -131,7 +131,7 @@ function lampWidget(element) {
 
 /***/ }),
 
-/***/ 357:
+/***/ 358:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

@@ -60,26 +60,26 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 364);
+/******/ 	return __webpack_require__(__webpack_require__.s = 365);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 364:
+/***/ 365:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(365);
+module.exports = __webpack_require__(366);
 
 
 /***/ }),
 
-/***/ 365:
+/***/ 366:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(366);
+__webpack_require__(367);
 
 window.onload = function () {
     var links = document.querySelectorAll('.tab-menu__link');
@@ -105,7 +105,7 @@ window.onload = function () {
 
 /***/ }),
 
-/***/ 366:
+/***/ 367:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
