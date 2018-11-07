@@ -60,26 +60,26 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 352);
+/******/ 	return __webpack_require__(__webpack_require__.s = 370);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 352:
+/***/ 370:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(353);
+module.exports = __webpack_require__(371);
 
 
 /***/ }),
 
-/***/ 353:
+/***/ 371:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(354);
+__webpack_require__(372);
 
 function lampWidget(element) {
 
@@ -127,7 +127,7 @@ Array.from(panelItem).forEach(function (item, i, panelItem) {
 
 /***/ }),
 
-/***/ 354:
+/***/ 372:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

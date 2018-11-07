@@ -60,12 +60,12 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 372);
+/******/ 	return __webpack_require__(__webpack_require__.s = 390);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 125:
+/***/ 143:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78,7 +78,7 @@ exports.Toggler = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-__webpack_require__(376);
+__webpack_require__(394);
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -134,27 +134,27 @@ var Toggler = exports.Toggler = function () {
 
 /***/ }),
 
-/***/ 372:
+/***/ 390:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(373);
+module.exports = __webpack_require__(391);
 
 
 /***/ }),
 
-/***/ 373:
+/***/ 391:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _tabs = __webpack_require__(374);
+var _tabs = __webpack_require__(392);
 
-var _toggler = __webpack_require__(125);
+var _toggler = __webpack_require__(143);
 
-__webpack_require__(377);
+__webpack_require__(395);
 
-var _togglerControl = __webpack_require__(378);
+var _togglerControl = __webpack_require__(396);
 
 (0, _tabs.tabs)(document.querySelector('#firstTabs'), [{
   title: 'Section 1',
@@ -182,7 +182,7 @@ console.dir(globalController);
 
 /***/ }),
 
-/***/ 374:
+/***/ 392:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -193,7 +193,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.tabs = tabs;
 
-__webpack_require__(375);
+__webpack_require__(393);
 
 var ACTIVE_CONTENT_CLASS_NAME = 'tabs__content-item_active';
 var ACTIVE_CONTROL_CLASS_NAME = 'tabs__control_active';
@@ -256,28 +256,28 @@ function tabs(rootElement, tabsContent) {
 
 /***/ }),
 
-/***/ 375:
+/***/ 393:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 376:
+/***/ 394:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 377:
+/***/ 395:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 378:
+/***/ 396:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -290,7 +290,7 @@ exports.TogglerControl = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _toggler = __webpack_require__(125);
+var _toggler = __webpack_require__(143);
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
