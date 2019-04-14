@@ -10,23 +10,7 @@ const baseConf = (_path) => {
     const VENDORS_NAME = 'vendors';
     const entry = {
         index: ['babel-polyfill', './src/index/index.js'],
-        lesson_5: ['./src/lesson_5/lesson_5.js'],
-        lesson_6: ['./src/lesson_6/lesson_6.js'],
-        lesson_6_hw: ['./src/lesson_6_hw/lesson_6_hw.js'],
-        home_6_1: ['./src/home_6_1/home_6_1.js'],
-        lesson_8: ['./src/lesson_8/lesson_8.js'],
-        lesson_8_hw: ['./src/lesson_8_hw/lesson_8_hw.js'],
-        pract_w_5: ['./src/pract_w_5/pract_w_5.js'],
-        lesson_10: ['./src/lesson_10/lesson_10.js'],
-        lesson_10_hw: ['./src/lesson_10_hw/lesson_10_hw.js'],
-        lesson_11_p_w: ['./src/lesson_11_p_w/lesson_11_p_w.js'],
-        lesson_11_hw: ['./src/lesson_11_hw/lesson_11_hw.js'],
-        lesson_13_hw: ['./src/lesson_13_hw/lesson_13_hw.js'],
-        lesson_13: ['./src/lesson_13/lesson_13.js'],
-        lesson_14_hw: ['./src/lesson_14_hw/lesson_14_hw.js'],
-        //lesson_15: ['./src/lesson_15/lesson_15.js'],
-        lesson_15_hw: ['./src/lesson_15_hw/lesson_15_hw.js'],
-        menu_react: ['./src/menu_react/menu_react.js']
+        commentsComponent: ['./src/commentsComponent/commentsComponent.js']
 
 
 
